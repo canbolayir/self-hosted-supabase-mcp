@@ -1,0 +1,57 @@
+{
+  "name": "self-hosted-supabase-mcp",
+  "version": "1.0.0",
+  "description": "A comprehensive Model Context Protocol server for self-hosted Supabase instances with complete dashboard parity",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist/",
+    "test": "echo \"Tests coming soon\" && exit 0",
+    "test:connection": "echo \"Connection test - Run the MCP server and test connection_test tool\"",
+    "test:database": "echo \"Database test - Run the MCP server and test db_select tool\"",
+    "test:auth": "echo \"Auth test - Run the MCP server and test auth_signup tool\"",
+    "lint": "echo \"Linting not configured yet\"",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@supabase/supabase-js": "^2.39.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "supabase",
+    "self-hosted",
+    "database",
+    "realtime",
+    "postgresql",
+    "auth",
+    "storage",
+    "rls",
+    "edge-functions",
+    "claude",
+    "ai-assistant"
+  ],
+  "author": "Self Hosted Supabase MCP Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/canbolayir/self-hosted-supabase-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/canbolayir/self-hosted-supabase-mcp/issues"
+  },
+  "homepage": "https://github.com/canbolayir/self-hosted-supabase-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
